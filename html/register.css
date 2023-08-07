@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "handwriting";
+    src:
+      url("fonts/journal-webfont.woff2") format("woff2"),
+      url("fonts/journal-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "typewriter";
+    src:
+      url("fonts/veteran_typewriter-webfont.woff2") format("woff2"),
+      url("fonts/veteran_typewriter-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+html{
+    font-size:10px;
+}
+
+
+h1{
+    font:7rem "handwriting",sans-serif;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font:3rem "typewriter",sans-serif;
+}
+form{
+    
+    margin:0 auto;
+    max-width: 460px;
+    padding:2rem 0 0 0;
+}
+legend{
+    color:white;
+    background-color: black;
+    font-size: 2rem;
+    margin:0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+fieldset > div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  button, label, input {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+  }
+label,button{
+    font:2rem "typewriter",sans-serif;
+    height:4rem;
+}
+button{
+    width:30%;
+    margin:0 auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: rgb(71, 154, 228);
+    border:none;
+    cursor: pointer;
+}
+button:hover{
+  background-color: rgb(207, 223, 238);
+}
+button:active{
+  background-color: rgb(71, 154, 228);
+}
+input{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border:3px solid gray;
+}
+input:focus{
+    background-color: beige;
+}
+input+span{
+    position:relative;
+}
+input:required+span::after{
+    font:2rem "typewriter",sans-serif;
+    position: absolute;
+    background-color: rgb(54, 80, 103);
+    color:white;
+    content: "required";
+    top:-26px;
+    left:-70px;
+}
+
+
+.error-email,.error-psw,.error-ID{
+  font-size: 1.5rem;
+  width:70%;
+  text-align: center;
+  color:red;
+  background-color:pink;
+  width:100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+p{
+  text-align: center;
+  font-size: 1.5rem;
+}
